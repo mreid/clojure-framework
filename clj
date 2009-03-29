@@ -4,10 +4,10 @@
 #
 # Mark Reid <http://mark.reid.name>
 # CREATED: 2009-03-29
-
 JAVA=/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home/bin/java 
-CLJ_DIR=$(dirname $0)
+CLJ_DIR=$HOME/Library/Frameworks/Clojure/lib
 CLOJURE=$CLJ_DIR/clojure.jar
+CONTRIB=$CLJ_DIR/clojure-contrib.jar
 JLINE=$CLJ_DIR/jline.jar
 CP=$CLOJURE:$JLINE
 

@@ -4,7 +4,7 @@
 #
 # Mark Reid <http://mark.reid.name>
 # CREATED: 2009-03-29
-JAVA=/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home/bin/java 
+JAVA=/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home/bin/java
 CLJ_DIR=$HOME/Library/Clojure/lib
 CLOJURE=$CLJ_DIR/clojure.jar
 CONTRIB=$CLJ_DIR/clojure-contrib.jar
@@ -17,9 +17,9 @@ then
 	CP=$CP:`cat .clojure`
 fi
 
-if [ -z "$1" ]; then 
+if [ -z "$1" ]; then
 	$JAVA -server -cp $CP \
-	    jline.ConsoleRunner clojure.lang.Repl    
+	    jline.ConsoleRunner clojure.lang.Repl
 else
 	scriptname=$1
 	$JAVA -server -cp $CP clojure.lang.Script $scriptname -- $*

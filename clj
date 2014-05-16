@@ -19,7 +19,7 @@ fi
 
 if [ -z "$1" ]; then 
 	$JAVA -server -cp $CP \
-	    jline.ConsoleRunner clojure.lang.Repl    
+	    jline.ConsoleRunner clojure.main
 else
 	scriptname=$1
 	$JAVA -server -cp $CP clojure.lang.Script $scriptname -- $*

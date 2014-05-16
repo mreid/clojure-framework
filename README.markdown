@@ -22,14 +22,14 @@ Grab the [latest release][cljzip] of Clojure and put the jar in the `lib` direct
 	$ curl http://clojure.googlecode.com/files/clojure_20090320.zip > /tmp/clojure.zip
 	$ unzip /tmp/clojure.zip -d /tmp/
 	$ cp /tmp/clojure/clojure.jar lib/
-	
+
 
 Next, get [JLine][] to make Clojure's interactive mode nicer:
 
 	$ curl http://internode.dl.sourceforge.net/sourceforge/jline/jline-0.9.94.zip > /tmp/jline.zip
 	$ unzip /tmp/jline.zip -d /tmp/
 	$ cp /tmp/jline-0.9.94/jline-0.9.94.jar lib/jline.jar
-	
+
 Make the `clj` script executable and link to it from somewhere in your `$PATH`. (I use `~/bin` and have added it to my `$PATH` in my `~/.bash_profile`):
 
 	$ chmod u+x clj
@@ -53,14 +53,14 @@ The `clj` command can be used to open an interactive session:
 
 	$ clj
 	Clojure
-	user=> 
+	user=>
 
 or it can be used to run a script:
 
-	$ clj test.clj 
+	$ clj test.clj
 	Hello, Clojure!
 
-To add extra jar files to the Clojure's classpath on a project-by-prject basis, just create a `.clojure` file in the project's directory with the text to add to the classpath. 
+To add extra jar files to the Clojure's classpath on a project-by-prject basis, just create a `.clojure` file in the project's directory with the text to add to the classpath.
 
 For example, in my `~/code/clojure/cafe` project directory, I can add the Grinder and Frother jars from the `~/code/clojure/cafe/lib` directory by putting their relative paths, separated by a colon, into a `.clojure` file:
 
